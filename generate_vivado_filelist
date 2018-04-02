@@ -15,10 +15,16 @@ open(INPUT,"$PATH/input.txt") or die ("can not open file $!");
                    $n =~ s/old_path1/new_path/;
                    $n =~ s/old_path2/new_path/;
                }
-         
+###########################################################################
+#    delete special lines in a array
+###########################################################################
+
                my @array2 = splice @array,1296,500 ;
                print @array."\n";
-               
+###########################################################################
+#  build a hash and put the element of array into it
+###########################################################################
+
                my %list ={};
                my $i = 0;
                foreach $i (0 .. $#array){
