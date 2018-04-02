@@ -7,7 +7,9 @@ open(INPUT,"$PATH/input.txt") or die ("can not open file $!");
     open(OUTPUT,"> output.txt") or die ("can not close file $!");
          
          while(@array = <INPUT>){
-               
+###########################################################################
+#    replace path of some elements
+###########################################################################               
                foreach $n (@array){
                    $n =~ s/\-vhdl\ \-lib\ WORK//;
                    $n =~ s/add_file/add_files/;
